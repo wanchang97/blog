@@ -1,4 +1,4 @@
-baseURL = 'https://wanchang97.github.io/blog/'  # 注意末尾的斜杠和你的仓库名一致
+baseURL = 'https://wanchang97.github.io/blog/'
 languageCode = 'en-us'
-title = '婉畅的旅行笔记'
+title = '婉畅的部落格'
 theme = "PaperMod"
