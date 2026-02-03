@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '婉畅的旅行笔记'
+theme = "PaperMod"
