@@ -1,0 +1,23 @@
+/* 将目录移动到侧边悬浮 */
+@media screen and (min-width: 1280px) {
+    .toc {
+        position: fixed;
+        left: calc((100% - 1280px) / 2 + 1030px); /* 根据屏幕宽度调整位置 */
+        top: 150px;
+        width: 250px;
+        max-height: 80vh;
+        overflow-y: auto;
+        background: var(--theme);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+}
+
+/* 窄屏幕时恢复原状或隐藏 */
+@media screen and (max-width: 1279px) {
+    .toc {
+        margin: 20px 0;
+    }
+}

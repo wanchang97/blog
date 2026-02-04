@@ -1,4 +1,15 @@
 baseURL = 'https://wanchang97.github.io/blog/'
 languageCode = 'en-us'
-title = '婉畅的部落格'
+title = '那由他无常的博客'
 theme = "PaperMod"
+
+[params]
+    # 开启目录功能
+    showToc = true
+    TocOpen = true # 默认展开
+    
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
