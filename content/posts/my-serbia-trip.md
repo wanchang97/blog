@@ -3,6 +3,10 @@ title: "塞尔维亚旅行经验复盘：塞尔维亚概览 Belgrade的逛吃和
 date: 2026-02-04
 tags: ["塞尔维亚", "滑雪", "旅行复盘", "Kopaonik"]
 categories: ["Travel"]
+cover:
+    image: "/blog/images/kopaonik%E6%BB%91%E9%9B%AA.jpg"
+    alt: "Kopaonik Skiing"
+    relative: false
 draft: false
 description: "总结和妈妈前往塞尔维亚的冬日之旅。包含最新的公交免费政策、网络流量卡选择及贝尔格莱德住宿分布对比以及旅行建议。"
 ---
