@@ -26,57 +26,20 @@ description: "总结和妈妈前往塞尔维亚的冬日之旅。包含最新的
 ---
 
 ## 📶 网络与流量卡
-### 国内运营商的国际漫游
-**亲测有坑**
+### 国内运营商的国际漫游---不建议
 1. **信号问题：** 漫游信号不稳定，经常出现降级。
 2. **“墙”依然存在：** 使用国内漫游无法直接打开 Google Maps、ChatGPT 或 Gemini，这对自由行（查地图/即时翻译）是致命的。
 所以不如临时连接机场的WiFi再在机场购买手机卡。
 
-### 国际旅行 eSIM plan
-**方便灵活，价格略高**
-适合去很多国家旅行的安排，一般目前国内的手机卡一般是实体卡双卡双待，不支持eSIM,而美版则是全部为虚拟卡不能用实体卡。欧洲版的手机则是一个实体卡一个虚拟卡。请确认自己的手机类型，查看- [塞尔维亚旅行的一般经验](#塞尔维亚旅行的一般经验)
-- [塞尔维亚旅行的一般经验](#塞尔维亚旅行的一般经验)
-  - [🛂 入境与签证](#-入境与签证)
-  - [📶 网络与流量卡](#-网络与流量卡)
-    - [国内运营商的国际漫游](#国内运营商的国际漫游)
-    - [国际旅行 eSIM plan](#国际旅行-esim-plan)
-    - [购买当地 SIM实体卡或者开通当地运营商eSIM卡](#购买当地-sim实体卡或者开通当地运营商esim卡)
-  - [🚌 出行交通](#-出行交通)
-  - [💰 换汇与支付](#-换汇与支付)
-- [贝尔格莱德的逛吃](#贝尔格莱德的逛吃)
-      - [🏠 住宿布局与推荐](#-住宿布局与推荐)
-    - [贝尔格莱德 (Belgrade) 区域对比](#贝尔格莱德-belgrade-区域对比)
-  - [运动和体育赛事](#运动和体育赛事)
-      - [Belgrade Arena](#belgrade-arena)
-      - [Tašmajdan Pool](#tašmajdan-pool)
-  - [文化和演出](#文化和演出)
-    - [JDP（Yugoslav Drama Theatre）南斯拉夫戏剧院](#jdpyugoslav-drama-theatre南斯拉夫戏剧院)
-    - [博物馆](#博物馆)
-  - [美食和特色推荐](#美食和特色推荐)
-      - [塞尔维亚的菜市场Pijaca，鱼市场和街角的面包店](#塞尔维亚的菜市场pijaca鱼市场和街角的面包店)
-        - [塞尔维亚的菜市场](#塞尔维亚的菜市场)
-        - [塞尔维亚的鱼市场](#塞尔维亚的鱼市场)
-        - [面包店Pekara](#面包店pekara)
-      - [塞尔维亚本地菜](#塞尔维亚本地菜)
-      - [泽蒙Zemun区的河鱼餐厅](#泽蒙zemun区的河鱼餐厅)
-      - [中餐](#中餐)
-- [Kopaonik滑雪的实用建议](#kopaonik滑雪的实用建议)
-  - [保险](#保险)
-    - [旅行保险](#旅行保险)
-    - [滑雪保险](#滑雪保险)
-  - [住宿交通和雪具租赁：](#住宿交通和雪具租赁)
-    - [住宿](#住宿)
-    - [交通](#交通)
-    - [雪具租赁](#雪具租赁)
-  - [滑雪票和教练](#滑雪票和教练)
-  - [放松活动spa \& wellness](#放松活动spa--wellness)
+### 国际旅行 eSIM plan---方便灵活，价格略高
+适合去很多国家旅行的安排，一般目前国内的手机卡一般是实体卡双卡双待，不支持eSIM,而美版则是全部为虚拟卡不能用实体卡。欧洲版的手机则是一个实体卡一个虚拟卡。请确认自己的手机类型，查看是否支持eSIM。
 
-### 购买当地 SIM实体卡或者开通当地运营商eSIM卡
+### 购买当地SIM实体卡或eSIM卡
 * **购买渠道：** 落地塞尔维亚后，在机场行李提取处就有 **Yettel**、**A1** 等运营商柜台。价格透明，不会宰客，现场护照实名激活。
 * **套餐参考 (2026年2月)：**
     * **纯塞境内：** 
     比如Yettel 提供700 RSD 100GB 流量，15天；500RSD 50GB流量 7天等适合游客的套餐。
-![塞尔维亚 Yettel 流量卡套餐](/blog/images/yettel手机流量预付卡套餐.jpg)
+<img src="/blog/images/yettel%E6%89%8B%E6%9C%BA%E6%B5%81%E9%87%8F%E9%A2%84%E4%BB%98%E5%8D%A1%E5%A5%97%E9%A4%90.jpg" alt="塞尔维亚 Yettel 流量卡套餐" width="50%" />
   
     * **巴尔干漫游：** 如果要去黑山、波黑，可选择 50GB(塞境内) + 8GB(漫游)，1400 RSD (30天)。*注意：此类套餐有时需前往市区营业厅办理。*
 * **通话需求：** 以上套餐多为纯流量。如需联系房东，建议下载运营商 App 充值，按分钟计费；或使用 WhatsApp消耗流量联系。
@@ -84,15 +47,13 @@ description: "总结和妈妈前往塞尔维亚的冬日之旅。包含最新的
 ---
 
 ## 🚌 出行交通
-塞尔维亚的公共交通体验还算方便快捷，有专用公交车道。
-
 
 * **机场大巴 (A1 Shuttle)：** 需额外付钱（约 400 RSD/人），可直达市中心。车型较老旧但车速极快。
 * **市区公交：** **2025年1月1日起，塞尔维亚公交全部免费**（包括游客）。班次频次高，虽然乘客较多，但非常方便。
 * **长途大巴**：google maps很多时候无法显示不同城镇之间的交通方式，往往只有开车路线和徒步路线。塞尔维亚的跨市巴士由几十家私营公司（如 Lasta, Jugoprevoz, Fudeks 等）运营。这些公司大多没有将实时或静态时刻表以 Google 要求的格式开放。
 替代方案：
-1. [BAS的官方订票网站https://www.bas.rs/sr/autobuske-karte](https://www.bas.rs/sr/autobuske-karte)
-2. [本地的大巴网站https://www.polazak.rs/sr/](https://www.polazak.rs/sr/)，现在已经可以在本地的网站上直接订票了，但是网站上订的比如Lasta公司运营的大巴，需要到车站[BAS](https://www.google.com/maps/place/Belgrade+Bus+Station/@44.8081721,20.40194,4036m/data=!3m1!1e3!4m10!1m2!2m1!1sBAS!3m6!1s0x475a7aacb8ca4d5d:0x7db94704474c1529!8m2!3d44.8058417!4d20.416284!15sCgNCQVNaBSIDYmFzkgELYnVzX2NvbXBhbnmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTmtkbDlNZEdKQkVBReABAPoBBAgAEEQ!16s%2Fg%2F1tdkql6x?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)再补一个站台票，大概是500ysd左右一个人.如果直接去大巴站现场买就不需要额外支付站台票了，但是价格可能差不多。
+1. [BAS的官方订票网站](https://www.bas.rs/sr/autobuske-karte)
+2. [本地的大巴网站](https://www.polazak.rs/sr/)，现在已经可以在本地的网站上直接订票了，但是网站上订的比如Lasta公司运营的大巴，需要到车站[BAS](https://www.google.com/maps/place/Belgrade+Bus+Station/@44.8081721,20.40194,4036m/data=!3m1!1e3!4m10!1m2!2m1!1sBAS!3m6!1s0x475a7aacb8ca4d5d:0x7db94704474c1529!8m2!3d44.8058417!4d20.416284!15sCgNCQVNaBSIDYmFzkgELYnVzX2NvbXBhbnmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTmtkbDlNZEdKQkVBReABAPoBBAgAEEQ!16s%2Fg%2F1tdkql6x?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)再补一个站台票，大概是500 RSD左右一个人.如果直接去大巴站现场买就不需要额外支付站台票了，但是价格可能差不多。
 3. Kopaonik 专线大巴
 往返 Kopaonik 的线路除了常规巴士，还有很多私营小巴/商务接驳（Shared Transfer）。例如 Terra Travel 或 Gea Tours，它们提供“门到门”的服务（从贝尔格莱德住处接人送往雪场），这些服务在任何地图软件上都是搜不到的，需要在其官网或通过电话/WhatsApp 预约。
 * **打车：** 建议使用 **Yandex Go** 或 **Pink Taxi**。价格透明，可以有效避免路边拦车被宰的情况。
@@ -112,9 +73,9 @@ description: "总结和妈妈前往塞尔维亚的冬日之旅。包含最新的
 
 # 贝尔格莱德的逛吃
 
-一般的历史背景文化介绍可以问AI，我这里我只讲一些对我来说还不错的地方。我们想体验更多本地人的生活，所以我们没有去酒店，hotel，spa等奢华的地方，而是选择了民宿，本地人的游泳馆，本地人常吃的面包店，菜市场等。我们没有打出租车，而是更多乘坐公交车和步行。
+一般的历史背景文化介绍可以问AI，我这里我只讲一些对我来说还不错的地方。我们想体验更多本地人的生活，所以我们没有去酒店，Hotel，Spa等奢华的地方，而是选择了民宿，本地人的游泳馆，本地人常吃的面包店，菜市场等。我们没有打出租车，而是更多乘坐公交车和步行。
 #### 🏠 住宿布局与推荐
-我通过 Booking 预订了三家不同的民宿，整体体验极佳，性价比高。
+我通过 Booking 预订了两家在Belgrade的不同的民宿，性价比很高，可以自行挑选。
 
 贝尔格莱德市中心是萨瓦河与多瑙河的交汇处（Ušće“乌什切” 意味交汇处）。以萨瓦河为界可以把贝尔格莱德分为东西两侧。
 ### 贝尔格莱德 (Belgrade) 区域对比
@@ -128,13 +89,13 @@ description: "总结和妈妈前往塞尔维亚的冬日之旅。包含最新的
 #### Belgrade Arena 
 欧洲杯篮球比赛会不定期举行
 水球比赛也会不定期举行。水球是塞尔维亚的国球。
-官方订票网站是： [https://belgrade2026.rs/](https://belgrade2026.rs/)
+官方订票网站是： [Belgrade 2026](https://belgrade2026.rs/)
 如果卖光可以上二手网站[viagogo](https://www.viagogo.com/rs/Sports-Tickets/Basketball/Euroleague-Basketball-2025-26-Tickets?=&PCID=PSRSADWHOMEUROLHEAD7E8F7E&MetroRegionID=&psc=&ps=&ps_p=0&ps_c=21103176626&ps_ag=159535264069&ps_tg=kwd-158128261&ps_ad=790512151801&ps_adp=&ps_fi=&ps_li=&ps_lp=1028595&ps_n=g&ps_d=c&ps_ex=&pscpag=&gad_source=1&gad_campaignid=21103176626&gbraid=0AAAAAD3dCeB1mXjf4px3rqXN0SSkA-ZaV&gclid=CjwKCAiA1obMBhAbEiwAsUBbImaaO7g30DgRp9nYwOUpq_vMteCuHyFk7pAfDE_nkmxdQXEFGJue5RoCyUoQAvD_BwE)。
 > **💡 Tips：** viagogo往往比赛前七小时左右票价会很低，可以不着急提前在二手网站上买票，最后一天捡捡漏。
 ![红星队篮球比赛](/blog/images/红星队篮球比赛.jpg)
 
 #### Tašmajdan Pool
-我们去了一家这里的游泳馆，是市民价格，600ysd/人，三个小时。中午休息，分上午和下午时间段开门。如果要健身游泳spa可以2200ysd/人。
+我们去了一家这里的游泳馆，是市民价格，600 RSD/人，三个小时。中午休息，分上午和下午时间段开门。如果要健身游泳Spa可以2200 RSD/人。
 
 很好玩的是这里的游泳池虽然是奥运会规格50米长，但是大家游泳的方式不是超长边游泳，而是往短边游泳。每个人都占着一个短边往返来回游。
 
@@ -163,16 +124,16 @@ Zemun Farmers Market (Zemunska Pijaca)
 
 #### 塞尔维亚本地菜
 
-米其林推荐的一家Iva New Balkan Cuisine，专业是肉类奶类等塞尔维亚的本地菜创新做法，价格适中，需要提前至少一天预订，中午开始就可以点餐。
+米其林推荐的一家 **Iva New Balkan Cuisine**，专业是肉类奶类等塞尔维亚的本地菜创新做法，价格适中，需要提前至少一天预订，中午开始就可以点餐。
 
-米其林一星的一家餐厅[laugouste](https://langouste.rs/index.php/en/)，需要提前预定，预定后不出席还会扣3000ysd
+米其林一星的一家餐厅 [**Langouste**](https://langouste.rs/index.php/en/)，需要提前预定，预定后不出席还会扣3000 RSD
 
 #### 泽蒙Zemun区的河鱼餐厅
-一家是百年老店[Шаран Restoran "Šaran" - Zemun](https://www.google.com/maps/place/%D0%A8%D0%B0%D1%80%D0%B0%D0%BD/@44.848099,20.4027304,2023m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475a65ac3af50113:0x73a1d3a3253f267a!8m2!3d44.8480995!4d20.4130087!16s%2Fg%2F1tcwvhtc?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)，价格偏高，但是味道很不错，有鱼汤，全鱼。推荐从旁边多瑙河上捕捞的新鲜河鱼。
+一家是百年老店 [**Šaran**](https://www.google.com/maps/place/%D0%A8%D0%B0%D1%80%D0%B0%D0%BD/@44.848099,20.4027304,2023m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475a65ac3af50113:0x73a1d3a3253f267a!8m2!3d44.8480995!4d20.4130087!16s%2Fg%2F1tcwvhtc?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)，价格偏高，但是味道很不错，有鱼汤，全鱼。推荐从旁边多瑙河上捕捞的新鲜河鱼。
 ![百年老店的鱼](/blog/images/百年老店的鱼.jpg)
 
 
-另一家是家常鱼店[Fish Butik ](https://www.google.com/maps/place/Fish+Butik/@44.8367162,20.4002922,2024m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475a65110c0a553b:0x7207dd371ecf9831!8m2!3d44.8367167!4d20.4105705!16s%2Fg%2F11ngpkshfy?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)，你点餐它才会做，都是打包带走，但是价格很不错，附近居民会在这里订餐，半小时后做好取走。它的菜单都是塞尔维亚语，我们主要是根据照片和翻译点餐。
+另一家是家常鱼店 [**Fish Butik**](https://www.google.com/maps/place/Fish+Butik/@44.8367162,20.4002922,2024m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475a65110c0a553b:0x7207dd371ecf9831!8m2!3d44.8367167!4d20.4105705!16s%2Fg%2F11ngpkshfy?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D)，你点餐它才会做，都是打包带走，但是价格很不错，附近居民会在这里订餐，半小时后做好取走。它的菜单都是塞尔维亚语，我们主要是根据照片和翻译点餐。
 这里的河鱼有四类可以选择：
 carp 鲤鱼
 catfish 鲶鱼
@@ -219,8 +180,8 @@ perch 鲈鱼
 如果追求性价比住到了附近小镇需要开车或者坐大巴往返，则可以在滑雪中心租赁雪具，每天存放在这里。
 
 ### 住宿
-如果想要体验ski-in ski-out，而且又是初学者，主要的初学者传送带都位于Kopaonik ski center这里，所以订酒店时就最好订在这个位置Ski Center Kopaonik附近，这里比较有名的四星级酒店有gorski。也可以通过Booking寻找附近的民宿，可以价格更合理，而且带洗衣机，厨房。这个滑雪中心有Maxi，Idea这样的平价连锁超市，即使不带早餐生活也很方便。
-[https://www.infokop.net/](https://www.infokop.net/)
+如果想要体验ski-in ski-out，而且又是初学者，主要的初学者传送带都位于Kopaonik Ski Center这里，所以订酒店时就最好订在这个位置Ski Center Kopaonik附近，这里比较有名的四星级酒店有**Gorski**。也可以通过Booking寻找附近的民宿，可以价格更合理，而且带洗衣机，厨房。这个滑雪中心有Maxi，Idea这样的平价连锁超市，即使不带早餐生活也很方便。
+[InfoKop](https://www.infokop.net/)
 集结了关于kopaonik滑雪的所有有用信息，天气，项目，雪票价格，还有last minute的民宿价格。但是last minute的信息只有塞尔维亚语，英语部分的内容也提供了足够多及时更新的缆车开放，雪道开放情况等滑雪者需要的信息。
 
 ### 交通
@@ -228,12 +189,12 @@ perch 鲈鱼
 
 如果，你是一个滑雪老手，至少可以游刃有余地上拖牵T-bar,圆盘的那种，还有非常多的地方的滑雪民宿可以选择，附近村庄的民宿选择详情见[晨鹤的部落格](https://chenhe.me/zh/posts/skiing-in-serbia/)。即便它们地处不同于滑雪中心的小镇，也可以近似ski-in ski-out。显然初学者就不要给自己这个压力了。
 
-因为附近的滑雪大巴每小时一班，而且额外收费，如果真的要每天坐ski bus来往，可以在ski-center租赁雪具，把雪具可以免费存放在租赁处。为了节省体力和增加滑雪的体验感还是优先选择可以ski-in ski-out的住宿。
+因为附近的滑雪大巴每小时一班，而且额外收费，如果真的要每天坐ski bus来往，可以在Ski Center租赁雪具，把雪具可以免费存放在租赁处。为了节省体力和增加滑雪的体验感还是优先选择可以ski-in ski-out的住宿。
 
-Brzeće村子的住宿比ski center便宜一半，这里虽然是附近的村子，但是新修建了滑雪缆车Gondola，班次比大巴更多，可以上下，但是注意最后一班Gondola一班是下午16.00，过了这个时间还是需要搭乘滑雪大巴返回.
+Brzeće村子的住宿比Ski Center便宜一半，这里虽然是附近的村子，但是新修建了滑雪缆车Gondola，班次比大巴更多，可以上下，但是注意最后一班Gondola一班是下午16.00，过了这个时间还是需要搭乘滑雪大巴返回.
 
 ### 雪具租赁
-这里推荐一个我在滑雪过程中看到的住宿加饭店**Mašinac Resort**，位置就在22号绿道旁边，比较像是青年旅舍，因为价格低位置好时常租满，还可以租雪具，请教练，存雪具。价格可以说是全雪场最低，租雪具ski是800ysd/天，snowboard是1000ysd/天，头盔200ysd/天，眼镜200ysd/天。
+这里推荐一个我在滑雪过程中看到的住宿加饭店**Mašinac Resort**，位置就在22号绿道旁边，比较像是青年旅舍，因为价格低位置好时常租满，还可以租雪具，请教练，存雪具。价格可以说是全雪场最低，租雪具ski是800 RSD/天，snowboard是1000 RSD/天，头盔200 RSD/天，眼镜200 RSD/天。
 ![青旅餐厅价格](/blog/images/青旅餐厅价格.JPEG)
 
 而山下很多家雪具店的价格都比较高，连租几天可以便宜，下面是我在山下雪具店询问得到的报价图。
@@ -245,19 +206,18 @@ Brzeće村子的住宿比ski center便宜一半，这里虽然是附近的村子
 
 > **💡 Tips：** 虽然22号是绿道，但是它还是要乘坐圆盘拖牵上下，新手可能还是很难很自信地上下拖牵，所以我和妈妈在这里租雪具时还是要扛着走到半山坡还回去。
 
-## 滑雪票和教练
-滑雪票的组合类型可以参看网站[https://www.infokop.net/](https://www.infokop.net/)网站上购买会比现场买有至少5%的折扣。
+## 滑雪票Ski Pass和教练
+滑雪票的组合类型可以参看网站[InfoKop](https://www.infokop.net/)网站上购买会比现场买有至少5%的折扣。
 雪票的组合价格多种多样，有初学者单用的雪票，进入一次不能多次使用，还有半天票，全天票，夜滑票，多日票等等。夜滑的雪道和缆车只有7号开。但是这是一个雪质很不错的蓝道。每天都有人工降雪和压雪机工作，晚上还有音乐，氛围很好。
 
-这里的初学者道都是位于ski center附近，用传送带运输，有特别特别平缓的宝宝道，还有有些坡度的初学者道如图所示。有坡度的是专门给单板新手练习使用的。如果请滑雪教练一般也会在初学者道见面。正常的滑雪教练价格是45欧元/小时左右。如果同时还在那家店租雪具一般会有更多的优惠。
+这里的初学者道都是位于ski center附近，用传送带运输，有特别特别平缓的宝宝道，还有有些坡度的初学者道如图所示。有坡度的图中绿色标记的是专门给单板新手练习使用的。如果请滑雪教练一般也会在初学者道见面。正常的滑雪教练价格是45欧元/小时左右。如果同时还在那家店租雪具一般会有更多的优惠。
 ![初学者道](/blog/images/初学者道.jpg)
 
-可以建议前几天买初学者的票，后面按程度升级为半天票，多日票等等。拿不定主意的新手可以和你的滑雪教练商量一下，看看你们今天是要上山还是在初级雪道。
+可以建议前几天买初学者的票，后面按程度升级为半天票，多日票等等![购票网址https://shop.skipas.rs/en/](https://shop.skipas.rs/en/)。拿不定主意的新手可以和你的滑雪教练商量一下，看看你们今天是要上山还是在初级雪道。
 
-当然为了能更好地理解掌握，学习参考了很多youtube上的滑雪视频。
 
 ## 放松活动spa & wellness
 学滑雪学急眼了还是得要懂得放松。
 我们尝试的是那个做广告做到首都贝尔格莱德的四星级[Gorski酒店](https://www.gorskihotel.com/files/wellness-and-spa-gorski.pdf?v1)。非酒店住客3900rsd/人一上午。直接去B3层付费。泳池，温泉算是及格，桑拿齐全，还有一个水床一样的放松房间挺新奇的。
 
-Gorski酒店的B1层有一家意大利Fine Dining餐馆，分量不错，会整花活。有一个玫瑰花的甜点拍照出片。价格在雪场不算很贵。
+Gorski酒店的B1层有一家意大利Fine Dining餐馆，分量不错，会整花活。有一个红莓玫瑰花的甜点还有干冰现场冒烟拍照出片。
