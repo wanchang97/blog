@@ -117,19 +117,19 @@ The National Museum of Serbia is free on Sundays.
 
 ## Food Recommendations
 
-#### Markets (Pijaca), Fish Markets, and Bakeries
+#### Belgrade Markets (Pijaca), Fish Markets, and Bakeries
 
-##### Markets
+##### Belgrade Markets
 Kalenić Green Market (Kalenić Pijaca)
 
-##### Fish Markets
+##### Belgrade Fish Markets
 Zemun Farmers Market (Zemunska Pijaca)
 ![Fish Market](/blog/images/鱼市2.jpg)
 
 ##### Bakeries (Pekara)
-Fresh bread from any corner bakery is the best. Recommended: **Đevrek** (Ђеврек), a sesame bagel similar to Turkish Simit.
+Fresh bread from any random corner is the best. Just find any **Pekara** on a street corner, buy a sesame-covered **Đevrek** (bagel)—very similar to Turkish Simit—and pair it with a bottle of "pink little cow" yogurt. That is the soul of a local breakfast.
 
-#### Local Serbian Cuisine
+#### Belgrade Local Cuisine
 
 **Iva New Balkan Cuisine** (Michelin Recommended): Innovative local dishes (meats, dairy). Moderate price. Book at least a day in advance.
 **Langouste** (Michelin One Star): Requires reservation. No-show fee 3000 RSD. [Website](https://langouste.rs/index.php/en/)
@@ -146,12 +146,12 @@ Sides: Salad or Potato.
 **Cash Only.** If eating there, the owner borrows forks from next door.
 
 
-#### Chinese Food
+#### Belgrade Chinese Food
 We randomly tried a few Chinese places and they were unexpectedly professional and delicious. Dumplings, Rougamo, cold noodles, ramen, hotpot, Malatang are available.
 ![Rougamo](/blog/images/肉夹馍.jpg)
 
 
-# Kopaonik Skiing Practical Advice
+# Kopaonik Skiing: Beginner's Guide
 
 My advice is suitable for beginners. We didn't explore the whole mountain, mainly the beginner conveyor belts. Only went up the mountain twice with a coach and once for night skiing.
 My mom (skis) and I (snowboard) are timid first-timers. We learned some lessons the hard way.
@@ -201,6 +201,8 @@ For quality gear, ask a certified coach.
 
 ## Ski Pass and Coaches
 Buy online at [InfoKop](https://www.infokop.net/) or [Official Shop](https://shop.skipas.rs/en/) for ~5% discount.
+[Ski Map High-Res](https://www.infokop.net/myphpfiles/skiinfo/SkiMapa.jpg)
+[Ski Pass Price List 2025-2026](https://www.infokop.net/images/stories/cenovnici/2026/zima/price-list-ski-pass-kopaonik-2025-2026-winter.jpg)
 Types: Beginner (single use), Half-day, Full-day, Night, Multi-day.
 Night skiing: Slope 7 (Blue, good quality, music).
 Beginner slopes at Ski Center have magic carpets.
