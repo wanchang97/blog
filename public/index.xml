@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>那由他无常的博客</title>
-    <link>https://wanchang97.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on 那由他无常的博客</description>
     <generator>Hugo -- 0.155.2</generator>
-    <language>en-us</language>
+    <language>zh</language>
     <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wanchang97.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>塞尔维亚旅行经验复盘：Belgrade的逛吃和Kopaonik的滑雪 </title>
-      <link>https://wanchang97.github.io/blog/my-serbia-trip/</link>
+      <link>http://localhost:1313/blog/my-serbia-trip/</link>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://wanchang97.github.io/blog/my-serbia-trip/</guid>
+      <guid>http://localhost:1313/blog/my-serbia-trip/</guid>
       <description>总结和妈妈前往塞尔维亚的冬日之旅。包含最新的公交免费政策、网络流量卡选择及贝尔格莱德住宿分布对比以及旅行建议。</description>
     </item>
   </channel>

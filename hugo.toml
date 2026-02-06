@@ -1,12 +1,25 @@
 baseURL = 'https://wanchang97.github.io/blog/'
 languageCode = 'en-us'
-title = '那由他无常的博客'
 theme = "PaperMod"
+
+defaultContentLanguage = 'zh'
+
+[languages]
+  [languages.zh]
+    languageName = '中文'
+    weight = 1
+    title = '那由他无常的博客'
+    
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    title = 'Wanchang Blog'
 
 [params]
     # 开启目录功能
     showToc = true
     TocOpen = true # 默认展开
+    comments = true
     
 [markup]
   [markup.tableOfContents]
