@@ -28,4 +28,4 @@ defaultContentLanguage = 'zh'
     startLevel = 2
 
 [permalinks]
-  posts = '/:filename/'
+  posts = '/:title/'

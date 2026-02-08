@@ -44,17 +44,17 @@
     <loc>http://localhost:1313/blog/en/tags/serbia/</loc>
     <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/en/my-serbia-trip/</loc>
+    <loc>http://localhost:1313/blog/en/serbia-trip-review-belgrade-city-walk-and-kopaonik-skiing/</loc>
     <lastmod>2026-02-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/blog/my-serbia-trip/"
+                href="http://localhost:1313/blog/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%E6%97%85%E8%A1%8C%E5%A4%8D%E7%9B%98belgrade%E7%9A%84%E9%80%9B%E5%90%83%E5%92%8Ckopaonik%E7%9A%84%E6%BB%91%E9%9B%AA/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/blog/en/my-serbia-trip/"
+                href="http://localhost:1313/blog/en/serbia-trip-review-belgrade-city-walk-and-kopaonik-skiing/"
                 />
   </url><url>
     <loc>http://localhost:1313/blog/en/tags/skiing/</loc>
