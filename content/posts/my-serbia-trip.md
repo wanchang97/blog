@@ -1,10 +1,11 @@
 ---
-title: "塞尔维亚旅行复盘：Belgrade的逛吃和Kopaonik的滑雪 "
+title: "塞尔维亚旅行滑雪攻略：Belgrade的逛吃和Kopaonik的滑雪 "
+url: /my-serbia-trip/
 date: 2026-02-04
 tags: ["塞尔维亚", "滑雪", "旅行复盘", "Kopaonik"]
 categories: ["Travel"]
 cover:
-    image: "/blog/images/kopaonik%E6%BB%91%E9%9B%AA.jpg"
+    image: "/blog/images/kopaonik滑雪.jpg"
     alt: "Kopaonik Skiing"
     relative: false
 draft: false
@@ -226,7 +227,7 @@ Brzeće村子的住宿比Ski Center便宜一半，这里虽然是附近的村子
 可以建议前几天买初学者的票，后面按程度升级为半天票，多日票等等!拿不定主意的新手可以和你的滑雪教练商量一下，看看你们今天是要上山还是在初级雪道。
 
 
-## 放松活动Spa & Wßellness
+## 放松活动Spa & Wellness
 学滑雪学急眼了还是得要懂得放松。
 我们尝试的是那个做广告做到首都贝尔格莱德的四星级[Gorski酒店](https://www.gorskihotel.com/files/wellness-and-spa-gorski.pdf?v1)。非酒店住客3900rsd/人一上午。直接去B3层付费。泳池，温泉算是及格，桑拿齐全，还有一个水床一样的放松房间挺新奇的。
 

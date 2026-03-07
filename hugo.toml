@@ -20,6 +20,10 @@ defaultContentLanguage = 'zh'
     showToc = true
     TocOpen = true # 默认展开
     comments = true
+    # 显式允许搜索引擎索引
+    env = "production"
+    # 如果主题有此参数，强制设为 false
+    noindex = false
     
 [markup]
   [markup.tableOfContents]
