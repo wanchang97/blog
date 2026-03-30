@@ -28,9 +28,9 @@ jobs:
           python-version: '3.11'
 
       - name: Auto translate changed posts (zh -> en)
-        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        if: ${{ secrets.GEMINI_API_KEY != '' }}
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python scripts/translate_posts.py \
             --changed-from "${{ github.event.before }}" \

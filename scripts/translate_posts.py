@@ -17,7 +17,7 @@ from urllib import error, request
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONTENT_POSTS = REPO_ROOT / "content" / "posts"
 GLOSSARY_FILE = REPO_ROOT / "data" / "translation-glossary.yml"
-DEFAULT_MODEL = "gpt-4.1-mini"
+DEFAULT_MODEL = "gemini-2.5-flash"
 
 
 def parse_args() -> argparse.Namespace:
@@ -51,8 +51,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default=os.getenv("OPENAI_MODEL", DEFAULT_MODEL),
-        help=f"OpenAI model to use (default: {DEFAULT_MODEL}).",
+        default=os.getenv("GEMINI_MODEL", DEFAULT_MODEL),
+        help=f"Gemini model to use (default: {DEFAULT_MODEL}).",
     )
     return parser.parse_args()
 
@@ -163,7 +163,7 @@ def changed_files(changed_from: str, changed_to: str) -> list[Path]:
     return [f for f in files if is_chinese_post(f)]
 
 
-def call_openai_translation(
+def call_gemini_translation(
     model: str,
     title: str,
     description: str,
@@ -172,12 +172,11 @@ def call_openai_translation(
     body: str,
     glossary: dict[str, str],
 ) -> dict:
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is not set.")
+        raise RuntimeError("GEMINI_API_KEY is not set.")
 
     glossary_block = "\n".join([f"- {k} => {v}" for k, v in glossary.items()]) or "- (empty)"
-
     prompt = f"""
 You are a professional Chinese-to-English blog translator.
 Translate the provided Chinese blog content to natural, fluent English.
@@ -207,32 +206,17 @@ BODY:
 """.strip()
 
     payload = {
-        "model": model,
-        "input": [
-            {
-                "role": "system",
-                "content": [
-                    {
-                        "type": "input_text",
-                        "text": "Translate carefully and output strict JSON only.",
-                    }
-                ],
-            },
-            {
-                "role": "user",
-                "content": [{"type": "input_text", "text": prompt}],
-            },
-        ],
-        "text": {"format": {"type": "json_object"}},
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"responseMimeType": "application/json"},
     }
-
+    endpoint = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"{model}:generateContent?key={api_key}"
+    )
     req = request.Request(
-        "https://api.openai.com/v1/responses",
+        endpoint,
         data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}",
-        },
+        headers={"Content-Type": "application/json"},
         method="POST",
     )
 
@@ -241,18 +225,24 @@ BODY:
             response_data = json.loads(resp.read().decode("utf-8"))
     except error.HTTPError as e:
         detail = e.read().decode("utf-8", errors="ignore")
-        raise RuntimeError(f"OpenAI API error: {e.code} {detail}") from e
+        raise RuntimeError(f"Gemini API error: {e.code} {detail}") from e
     except error.URLError as e:
-        raise RuntimeError(f"Network error calling OpenAI API: {e}") from e
+        raise RuntimeError(f"Network error calling Gemini API: {e}") from e
 
-    output_text = response_data.get("output_text")
+    candidates = response_data.get("candidates", [])
+    if not candidates:
+        raise RuntimeError(f"Gemini response missing candidates: {response_data}")
+    parts = candidates[0].get("content", {}).get("parts", [])
+    if not parts:
+        raise RuntimeError(f"Gemini response missing parts: {response_data}")
+    output_text = parts[0].get("text", "")
     if not output_text:
-        raise RuntimeError("OpenAI response does not include output_text.")
+        raise RuntimeError("Gemini response does not include text output.")
 
     try:
         return json.loads(output_text)
     except json.JSONDecodeError as e:
-        raise RuntimeError(f"Model output is not valid JSON: {output_text}") from e
+        raise RuntimeError(f"Gemini output is not valid JSON: {output_text}") from e
 
 
 def quote(s: str) -> str:
@@ -379,7 +369,7 @@ def main() -> int:
             translated_count += 1
             continue
 
-        translated = call_openai_translation(
+        translated = call_gemini_translation(
             model=args.model,
             title=title_zh,
             description=description_zh,

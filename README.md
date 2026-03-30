@@ -30,14 +30,14 @@
 
 4.  **中文文章自动生成英文稿（本地）**:
     ```bash
-    export OPENAI_API_KEY="你的OpenAIKey"
+    export GEMINI_API_KEY="你的GeminiKey"
     python scripts/translate_posts.py --path content/posts/your-article-name.md
     ```
     > 会生成 `content/posts/your-article-name.en.md`，并自动写入 `source_hash` 方便增量更新。
 
 5.  **批量翻译所有中文文章**:
     ```bash
-    export OPENAI_API_KEY="你的OpenAIKey"
+    export GEMINI_API_KEY="你的GeminiKey"
     python scripts/translate_posts.py
     ```
 
