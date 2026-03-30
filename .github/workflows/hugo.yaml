@@ -22,6 +22,20 @@ jobs:
           hugo-version: 'latest'
           extended: true # 支持某些主题需要的 Sass/SCSS 编译
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Auto translate changed posts (zh -> en)
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/translate_posts.py \
+            --changed-from "${{ github.event.before }}" \
+            --changed-to "${{ github.sha }}"
+
       - name: Build
         run: hugo --gc --minify --environment production
 

@@ -28,11 +28,26 @@
     git push origin main
     ```
 
+4.  **中文文章自动生成英文稿（本地）**:
+    ```bash
+    export OPENAI_API_KEY="你的OpenAIKey"
+    python scripts/translate_posts.py --path content/posts/your-article-name.md
+    ```
+    > 会生成 `content/posts/your-article-name.en.md`，并自动写入 `source_hash` 方便增量更新。
+
+5.  **批量翻译所有中文文章**:
+    ```bash
+    export OPENAI_API_KEY="你的OpenAIKey"
+    python scripts/translate_posts.py
+    ```
+
 ## 📂 项目结构说明
 
 * `content/posts/`: 存放旅行复盘的 Markdown 源文件。
 * `static/`: 存放图片、PDF 等静态资源。
 * `.github/workflows/hugo.yaml`: 负责自动把代码编译并发布到网页的脚本。
+* `scripts/translate_posts.py`: 中文文章翻译为英文文章的自动化脚本。
+* `data/translation-glossary.yml`: 术语映射表（可按需扩充）。
 
 ---
 *Powered by [Hugo](https://gohugo.io/)*
