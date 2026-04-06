@@ -27,14 +27,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Auto translate changed posts (zh -> en)
+      # Translate every Chinese post that is missing `*.en.md` or has a stale
+      # `source_hash`. Do NOT use only `git diff` for this: a push that only
+      # touches workflow/config would skip all posts and leave English missing.
+      - name: Auto translate posts (zh -> en)
         if: ${{ secrets.GEMINI_API_KEY != '' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          python scripts/translate_posts.py \
-            --changed-from "${{ github.event.before }}" \
-            --changed-to "${{ github.sha }}"
+        run: python scripts/translate_posts.py
 
       - name: Build
         run: hugo --gc --minify --environment production
