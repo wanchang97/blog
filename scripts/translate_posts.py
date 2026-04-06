@@ -148,6 +148,47 @@ def extract_existing_hash(english_raw: str) -> str | None:
     return match.group(1) if match else None
 
 
+def strip_markdown_json_fence(text: str) -> str:
+    """Remove optional ``` / ```json fences around model output."""
+    t = text.strip()
+    if not t.startswith("```"):
+        return t
+    t = re.sub(r"^```(?:json)?\s*", "", t, count=1, flags=re.IGNORECASE)
+    t = re.sub(r"\s*```\s*$", "", t, count=1)
+    return t.strip()
+
+
+def parse_model_json(output_text: str) -> dict:
+    """
+    Parse JSON from Gemini. Models sometimes emit invalid JSON when the `body`
+    field contains unescaped newlines/quotes; we try strict parse first, then
+    raw_decode from the first '{'.
+    """
+    text = strip_markdown_json_fence(output_text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    start = text.find("{")
+    if start == -1:
+        raise RuntimeError(
+            "Gemini output is not valid JSON (no object found). First 500 chars: "
+            + repr(text[:500])
+        )
+    decoder = json.JSONDecoder()
+    try:
+        obj, _end = decoder.raw_decode(text, start)
+        if isinstance(obj, dict):
+            return obj
+        raise RuntimeError("Gemini JSON root is not an object.")
+    except json.JSONDecodeError as e:
+        raise RuntimeError(
+            "Gemini output is not valid JSON. Common cause: unescaped quotes or "
+            "raw newlines inside the JSON string for `body`. First 800 chars: "
+            + repr(text[:800])
+        ) from e
+
+
 def changed_files(changed_from: str, changed_to: str) -> list[Path]:
     cmd = ["git", "diff", "--name-only", changed_from, changed_to]
     proc = subprocess.run(
@@ -192,6 +233,7 @@ Requirements:
    - tags (array of strings)
    - categories (array of strings)
    - body (translated markdown body)
+6) In JSON strings, escape double quotes as \\", backslashes as \\\\, and use \\n for newlines — never put raw line breaks inside a JSON string value.
 
 Term glossary (must prioritize):
 {glossary_block}
@@ -205,9 +247,36 @@ BODY:
 {body}
 """.strip()
 
+    # Structured output: valid JSON per Gemini docs (responseJsonSchema + JSON Schema types).
+    # See: https://ai.google.dev/gemini-api/docs/structured-output
+    response_json_schema = {
+        "type": "object",
+        "properties": {
+            "title": {"type": "string", "description": "English post title"},
+            "description": {"type": "string", "description": "English summary for SEO"},
+            "tags": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "English tags",
+            },
+            "categories": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "English categories",
+            },
+            "body": {
+                "type": "string",
+                "description": "Full translated Markdown body (English)",
+            },
+        },
+        "required": ["title", "description", "tags", "categories", "body"],
+    }
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"responseMimeType": "application/json"},
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseJsonSchema": response_json_schema,
+        },
     }
     endpoint = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -221,7 +290,7 @@ BODY:
     )
 
     try:
-        with request.urlopen(req, timeout=120) as resp:
+        with request.urlopen(req, timeout=300) as resp:
             response_data = json.loads(resp.read().decode("utf-8"))
     except error.HTTPError as e:
         detail = e.read().decode("utf-8", errors="ignore")
@@ -239,10 +308,7 @@ BODY:
     if not output_text:
         raise RuntimeError("Gemini response does not include text output.")
 
-    try:
-        return json.loads(output_text)
-    except json.JSONDecodeError as e:
-        raise RuntimeError(f"Gemini output is not valid JSON: {output_text}") from e
+    return parse_model_json(output_text)
 
 
 def quote(s: str) -> str:
