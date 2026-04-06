@@ -16,6 +16,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
     weight = 2
     title = 'Wanchang Blog'
 
+  [languages.de]
+    languageName = 'Deutsch'
+    weight = 3
+    title = 'Wanchang Blog'
+
 [params]
     # 开启目录功能
     showToc = true

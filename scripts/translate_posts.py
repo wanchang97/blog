@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Translate Chinese Hugo posts into English counterparts."""
+"""Translate Chinese Hugo posts into English and German counterparts (Gemini)."""
 
 from __future__ import annotations
 
@@ -17,12 +17,13 @@ from urllib import error, request
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONTENT_POSTS = REPO_ROOT / "content" / "posts"
 GLOSSARY_FILE = REPO_ROOT / "data" / "translation-glossary.yml"
+GLOSSARY_DE_FILE = REPO_ROOT / "data" / "translation-glossary-de.yml"
 DEFAULT_MODEL = "gemini-2.5-flash"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate English Hugo posts from Chinese source posts."
+        description="Generate English and German Hugo posts from Chinese source posts.",
     )
     parser.add_argument(
         "--path",
@@ -62,11 +63,16 @@ def is_chinese_post(path: Path) -> bool:
         path.suffix == ".md"
         and path.parent == CONTENT_POSTS
         and not path.name.endswith(".en.md")
+        and not path.name.endswith(".de.md")
     )
 
 
 def english_path_for(chinese_path: Path) -> Path:
     return chinese_path.with_name(chinese_path.stem + ".en.md")
+
+
+def german_path_for(chinese_path: Path) -> Path:
+    return chinese_path.with_name(chinese_path.stem + ".de.md")
 
 
 def split_front_matter(raw: str) -> tuple[str, str]:
@@ -206,6 +212,7 @@ def changed_files(changed_from: str, changed_to: str) -> list[Path]:
 
 def call_gemini_translation(
     model: str,
+    target_lang: str,
     title: str,
     description: str,
     tags: list[str],
@@ -217,10 +224,29 @@ def call_gemini_translation(
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY is not set.")
 
+    if target_lang == "en":
+        role = "Chinese-to-English blog translator"
+        target = "natural, fluent English"
+        title_desc = "English post title"
+        desc_desc = "English summary for SEO"
+        tags_desc = "English tags"
+        cat_desc = "English categories"
+        body_desc = "Full translated Markdown body (English)"
+    elif target_lang == "de":
+        role = "Chinese-to-German blog translator"
+        target = "natural, fluent German (standard written German suitable for a personal blog)"
+        title_desc = "German post title"
+        desc_desc = "German summary for SEO"
+        tags_desc = "German tags"
+        cat_desc = "German categories"
+        body_desc = "Full translated Markdown body (German)"
+    else:
+        raise RuntimeError(f"Unsupported target_lang: {target_lang}")
+
     glossary_block = "\n".join([f"- {k} => {v}" for k, v in glossary.items()]) or "- (empty)"
     prompt = f"""
-You are a professional Chinese-to-English blog translator.
-Translate the provided Chinese blog content to natural, fluent English.
+You are a professional {role}.
+Translate the provided Chinese blog content to {target}.
 
 Requirements:
 1) Preserve Markdown structure exactly (headings, links, images, code fences, lists, blockquotes).
@@ -252,21 +278,21 @@ BODY:
     response_json_schema = {
         "type": "object",
         "properties": {
-            "title": {"type": "string", "description": "English post title"},
-            "description": {"type": "string", "description": "English summary for SEO"},
+            "title": {"type": "string", "description": title_desc},
+            "description": {"type": "string", "description": desc_desc},
             "tags": {
                 "type": "array",
                 "items": {"type": "string"},
-                "description": "English tags",
+                "description": tags_desc,
             },
             "categories": {
                 "type": "array",
                 "items": {"type": "string"},
-                "description": "English categories",
+                "description": cat_desc,
             },
             "body": {
                 "type": "string",
-                "description": "Full translated Markdown body (English)",
+                "description": body_desc,
             },
         },
         "required": ["title", "description", "tags", "categories", "body"],
@@ -315,8 +341,8 @@ def quote(s: str) -> str:
     return '"' + s.replace('"', '\\"') + '"'
 
 
-def write_english_post(
-    english_file: Path,
+def write_translated_post(
+    out_file: Path,
     translated: dict,
     source_meta: dict,
     source_sha: str,
@@ -370,11 +396,11 @@ def write_english_post(
     output = "\n".join(lines)
 
     if dry_run:
-        print(f"[DRY RUN] would write: {english_file.relative_to(REPO_ROOT)}")
+        print(f"[DRY RUN] would write: {out_file.relative_to(REPO_ROOT)}")
         return
 
-    english_file.write_text(output, encoding="utf-8")
-    print(f"wrote: {english_file.relative_to(REPO_ROOT)}")
+    out_file.write_text(output, encoding="utf-8")
+    print(f"wrote: {out_file.relative_to(REPO_ROOT)}")
 
 
 def gather_targets(args: argparse.Namespace) -> list[Path]:
@@ -401,7 +427,8 @@ def gather_targets(args: argparse.Namespace) -> list[Path]:
 
 def main() -> int:
     args = parse_args()
-    glossary = parse_glossary(GLOSSARY_FILE)
+    glossary_en = parse_glossary(GLOSSARY_FILE)
+    glossary_de = parse_glossary(GLOSSARY_DE_FILE)
     targets = gather_targets(args)
 
     if not targets:
@@ -411,50 +438,62 @@ def main() -> int:
     translated_count = 0
     skipped_count = 0
 
+    lang_jobs: list[tuple[str, Path, dict[str, str]]] = [
+        ("en", english_path_for, glossary_en),
+        ("de", german_path_for, glossary_de),
+    ]
+
     for zh_file in targets:
         raw = zh_file.read_text(encoding="utf-8")
         front_matter, body = split_front_matter(raw)
         meta = parse_front_matter(front_matter)
 
-        english_file = english_path_for(zh_file)
         sha = source_hash(front_matter, body)
-        if english_file.exists() and not args.force:
-            old_hash = extract_existing_hash(english_file.read_text(encoding="utf-8"))
-            if old_hash == sha:
-                print(f"skip (hash unchanged): {english_file.relative_to(REPO_ROOT)}")
-                skipped_count += 1
-                continue
-
         title_zh = str(meta.get("title", "")).strip().strip('"')
         description_zh = str(meta.get("description", "")).strip().strip('"')
         tags_zh = parse_inline_list(str(meta.get("tags", "")))
         categories_zh = parse_inline_list(str(meta.get("categories", "")))
 
-        if args.dry_run:
-            print(f"[DRY RUN] would translate: {zh_file.relative_to(REPO_ROOT)}")
-            translated_count += 1
-            continue
+        for lang, path_fn, glossary in lang_jobs:
+            out_file = path_fn(zh_file)
+            if out_file.exists() and not args.force:
+                old_hash = extract_existing_hash(out_file.read_text(encoding="utf-8"))
+                if old_hash == sha:
+                    print(
+                        f"skip ({lang} hash unchanged): {out_file.relative_to(REPO_ROOT)}"
+                    )
+                    skipped_count += 1
+                    continue
 
-        translated = call_gemini_translation(
-            model=args.model,
-            title=title_zh,
-            description=description_zh,
-            tags=tags_zh,
-            categories=categories_zh,
-            body=body,
-            glossary=glossary,
-        )
-        write_english_post(
-            english_file=english_file,
-            translated=translated,
-            source_meta=meta,
-            source_sha=sha,
-            dry_run=args.dry_run,
-        )
-        translated_count += 1
+            if args.dry_run:
+                print(
+                    f"[DRY RUN] would translate {lang}: {zh_file.relative_to(REPO_ROOT)}"
+                )
+                translated_count += 1
+                continue
+
+            translated = call_gemini_translation(
+                model=args.model,
+                target_lang=lang,
+                title=title_zh,
+                description=description_zh,
+                tags=tags_zh,
+                categories=categories_zh,
+                body=body,
+                glossary=glossary,
+            )
+            write_translated_post(
+                out_file=out_file,
+                translated=translated,
+                source_meta=meta,
+                source_sha=sha,
+                dry_run=args.dry_run,
+            )
+            translated_count += 1
 
     print(
-        f"done: translated={translated_count}, skipped={skipped_count}, total={len(targets)}"
+        f"done: outputs written or dry-run={translated_count}, skipped={skipped_count}, "
+        f"posts={len(targets)}"
     )
     return 0
 
