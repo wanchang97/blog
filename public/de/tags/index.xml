@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tags on Wanchang Blog</title><link>https://wanchang97.github.io/blog/de/tags/</link><description>Recent content in Tags on Wanchang Blog</description><generator>Hugo -- 0.155.2</generator><language>de</language><atom:link href="https://wanchang97.github.io/blog/de/tags/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Wanchang Blog</title>
+    <link>https://wanchang97.github.io/blog/de/tags/</link>
+    <description>Recent content in Tags on Wanchang Blog</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>de</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wanchang97.github.io/blog/de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finanzen</title>
+      <link>https://wanchang97.github.io/blog/de/tags/finanzen/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/de/tags/finanzen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leben</title>
+      <link>https://wanchang97.github.io/blog/de/tags/leben/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/de/tags/leben/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflexionen</title>
+      <link>https://wanchang97.github.io/blog/de/tags/reflexionen/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/de/tags/reflexionen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zeit</title>
+      <link>https://wanchang97.github.io/blog/de/tags/zeit/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/de/tags/zeit/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

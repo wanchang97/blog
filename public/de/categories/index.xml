@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on Wanchang Blog</title><link>https://wanchang97.github.io/blog/de/categories/</link><description>Recent content in Categories on Wanchang Blog</description><generator>Hugo -- 0.155.2</generator><language>de</language><atom:link href="https://wanchang97.github.io/blog/de/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Wanchang Blog</title>
+    <link>https://wanchang97.github.io/blog/de/categories/</link>
+    <description>Recent content in Categories on Wanchang Blog</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>de</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wanchang97.github.io/blog/de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Essay</title>
+      <link>https://wanchang97.github.io/blog/de/categories/essay/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/de/categories/essay/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

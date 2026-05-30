@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Time on Wanchang Blog</title>
+    <link>https://wanchang97.github.io/blog/en/tags/time/</link>
+    <description>Recent content in Time on Wanchang Blog</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wanchang97.github.io/blog/en/tags/time/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Only Scarce Resource is Time</title>
+      <link>https://wanchang97.github.io/blog/en/the-only-scarce-resource-is-time/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://wanchang97.github.io/blog/en/the-only-scarce-resource-is-time/</guid>
+      <description>Reflecting on the physical signals of allergies, re-examining the relationship between money and time, and exploring what is truly the only scarce resource in our lives.</description>
+    </item>
+  </channel>
+</rss>
